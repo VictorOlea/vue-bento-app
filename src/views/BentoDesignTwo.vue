@@ -1,11 +1,13 @@
 <template>
   <BentoGrid :class="$style['bento-grid']">
     <BentoCard :colSpan="1" :rowSpan="1">
-      <h1 :class="$style['title-card']">Welcome To Japan!!!</h1>
+      <section :class="sectionStyle['section-card']">
+        <h1 :class="$style['title-card']">日本へようこそ！</h1>
+      </section>
     </BentoCard>
     <BentoCard :colSpan="2" :rowSpan="1"
       ><section :class="sectionStyle['section-card']">
-        <h2 :class="sectionStyle['section-title']">Cultura</h2>
+        <h1 :class="$style['title-card']">Ichi-go ichi-e (一期一会)</h1>
       </section></BentoCard
     >
     <BentoCard :colSpan="1" :rowSpan="3"
@@ -63,7 +65,7 @@ import sectionStyle from "../styles/section.module.css";
 
 <style module>
 .title-card {
-  font-size: 1.4em;
+  font-size: 1.8em;
   overflow: hidden;
   height: 100%;
   width: 100%;

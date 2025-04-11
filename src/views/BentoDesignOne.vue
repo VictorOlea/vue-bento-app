@@ -12,13 +12,29 @@
     >
     <BentoCard :colSpan="2" :rowSpan="4"
       ><section :class="sectionStyle['section-card']">
-        <h2 :class="sectionStyle['section-title']">Disfruta</h2>
+        <h2 :class="sectionStyle['section-title']">Track List</h2>
+        <p :class="sectionStyle['section-content']">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p :class="sectionStyle['section-content']">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
         <p :class="sectionStyle['section-content']">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
       </section>
     </BentoCard>
-    <BentoCard :colSpan="2" :rowSpan="2">Card 4</BentoCard>
+    <BentoCard :colSpan="2" :rowSpan="2"
+      ><section :class="sectionStyle['section-card']">
+        <h2 :class="sectionStyle['section-title']">About Us</h2>
+        <p :class="sectionStyle['section-content']">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non aliquid
+          excepturi qui consectetur nostrum quo distinctio delectus eius
+          eligendi nobis tenetur ipsum vel, reprehenderit esse fugiat culpa
+          modi, enim ex.
+        </p>
+      </section></BentoCard
+    >
     <BentoCard :colSpan="2" :rowSpan="1"
       ><div :class="imageStyle['img-wrapper']">
         <img
