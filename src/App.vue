@@ -5,7 +5,7 @@ import BentoDesignOne from "./views/BentoDesignOne.vue";
 import BentoDesignTwo from "./views/BentoDesignTwo.vue";
 import BentoDesignThree from "./views/BentoDesignThree.vue";
 import SectionTitle from "./components/SectionTitle.vue";
-import FooterTest from "./components/PageFooter.vue";
+import Footer from "./components/PageFooter.vue";
 </script>
 
 <template>
@@ -20,6 +20,5 @@ import FooterTest from "./components/PageFooter.vue";
   <SectionTitle title="Bento Example-3" />
   <bento-design-three />
   <br />
-  <footer />
-  <FooterTest />
+  <Footer />
 </template>

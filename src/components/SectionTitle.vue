@@ -12,11 +12,11 @@ defineProps<{
 
 <style module>
 .section-title {
-  width: 100%; /* Ocupa todo el ancho disponible */
+  width: 100%;
   display: flex;
   align-items: center;
   padding-bottom: 0;
-  border-bottom: 4px solid var(--border-color, #e0e0e0); /* Usa una variable o valor por defecto */
+  border-bottom: 4px solid var(--border-color, #e0e0e0);
   margin-bottom: 1rem;
 }
 
@@ -24,7 +24,7 @@ defineProps<{
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 0;
-  color: var(--text-color); /* Usa la variable definida en el tema */
+  color: var(--text-color);
   text-align: left;
 }
 </style>
