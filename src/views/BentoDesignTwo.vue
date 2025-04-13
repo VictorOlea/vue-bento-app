@@ -18,7 +18,7 @@
         mobile: { col: 4, row: 1 },
       }"
       ><section :class="sectionStyle['section-card']">
-        <h1 :class="$style['title-card']">Ichi-go ichi-e (一期一会)</h1>
+        <h1 :class="$style['title-card']">一期一会</h1>
       </section></BentoCard
     >
     <BentoCard
@@ -102,7 +102,6 @@ import sectionStyle from "../styles/section.module.css";
 <style module>
 .title-card {
   font-size: 1.8em;
-  overflow: hidden;
   height: 100%;
   width: 100%;
 }

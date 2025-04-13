@@ -18,7 +18,7 @@
         mobile: { col: 4, row: 1 },
       }"
       ><section :class="sectionStyle['section-card']">
-        <h1 :class="$style['title-card']">Lions, Tigers & Bears</h1>
+        <h1 :class="$style['title-card']">Tigers & Bears</h1>
       </section></BentoCard
     >
     <BentoCard
@@ -29,15 +29,11 @@
       }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Track List</h2>
-        <p :class="sectionStyle['section-content']">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p :class="sectionStyle['section-content']">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
-        <p :class="sectionStyle['section-content']">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-        </p>
+        <ul :class="sectionStyle['section-content']">
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</li>
+        </ul>
       </section>
     </BentoCard>
     <BentoCard
@@ -56,7 +52,8 @@
         </p>
       </section></BentoCard
     >
-    <BentoCard :responsive-span="{
+    <BentoCard
+      :responsive-span="{
         desktop: { col: 2, row: 1 },
         tablet: { col: 4, row: 1 },
         mobile: { col: 4, row: 1 },
@@ -89,7 +86,6 @@ import sectionStyle from "../styles/section.module.css";
 
 .title-card {
   font-size: 1.8em;
-  overflow: hidden;
   height: 100%;
   width: 100%;
 }
