@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import DarkModeToggle from "./components/DarkModeToggle.vue";
-import Header from "./components/Header.vue";
+import Header from "./components/PageHeader.vue";
 import BentoDesignOne from "./views/BentoDesignOne.vue";
 import BentoDesignTwo from "./views/BentoDesignTwo.vue";
 import BentoDesignThree from "./views/BentoDesignThree.vue";

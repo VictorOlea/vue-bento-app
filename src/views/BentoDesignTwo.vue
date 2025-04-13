@@ -1,16 +1,32 @@
 <template>
   <BentoGrid :class="$style['bento-grid']">
-    <BentoCard :colSpan="1" :rowSpan="1">
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 1 },
+        tablet: { col: 2, row: 1 },
+        mobile: { col: 4, row: 1 },
+      }"
+    >
       <section :class="sectionStyle['section-card']">
         <h1 :class="$style['title-card']">日本へようこそ！</h1>
       </section>
     </BentoCard>
-    <BentoCard :colSpan="2" :rowSpan="1"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 2, row: 1 },
+        tablet: { col: 2, row: 1 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h1 :class="$style['title-card']">Ichi-go ichi-e (一期一会)</h1>
       </section></BentoCard
     >
-    <BentoCard :colSpan="1" :rowSpan="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 3 },
+        tablet: { col: 4, row: 4 },
+        mobile: { col: 4, row: 2 },
+      }"
       ><div :class="imageStyle['img-wrapper']">
         <img
           :class="imageStyle['img-card']"
@@ -18,7 +34,12 @@
           alt="Vista de la montaña en la ciudad de Japón"
         /></div
     ></BentoCard>
-    <BentoCard :colSpan="1" :rowSpan="2"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 2 },
+        tablet: { col: 2, row: 2 },
+        mobile: { col: 4, row: 2 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Disfruta</h2>
         <p :class="sectionStyle['section-content']">
@@ -26,7 +47,12 @@
         </p>
       </section></BentoCard
     >
-    <BentoCard :colSpan="2" :rowSpan="5"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 2, row: 5 },
+        tablet: { col: 2, row: 2 },
+        mobile: { col: 4, row: 2 },
+      }"
       ><div :class="imageStyle['img-wrapper']">
         <img
           src="../assets/japanCityNight.jpg"
@@ -34,7 +60,12 @@
           :class="imageStyle['img-card']"
         /></div
     ></BentoCard>
-    <BentoCard :colSpan="1" :rowSpan="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 3 },
+        tablet: { col: 2, row: 2 },
+        mobile: { col: 4, row: 2 },
+      }"
       ><div :class="imageStyle['img-wrapper']">
         <img
           :class="imageStyle['img-card']"
@@ -42,7 +73,12 @@
           alt="Noche en la ciudad de Japón"
         /></div
     ></BentoCard>
-    <BentoCard :colSpan="1" :rowSpan="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 3 },
+        tablet: { col: 2, row: 2 },
+        mobile: { col: 4, row: 2 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Explora Japón</h2>
         <p :class="sectionStyle['section-content']">

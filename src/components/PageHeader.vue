@@ -1,7 +1,9 @@
 <template>
   <header :class="$style['header']">
-    <h1 :class="$style['title']">{{ title }}</h1>
-    <p :class="$style['subtitle']">{{ subtitle }}</p>
+    <div :class="$style['container']">
+      <h1 :class="$style['title']">{{ title }}</h1>
+      <p :class="$style['subtitle']">{{ subtitle }}</p>
+    </div>
   </header>
 </template>
 

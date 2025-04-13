@@ -11,8 +11,7 @@
         <img :class="imageStyle['img-card']" src="../assets/rockBand.jpg" />
       </div>
     </BentoCard>
-    <BentoCard
-      :responsive-span="{
+    <BentoCard :responsive-span="{
         desktop: { col: 2, row: 1 },
         tablet: { col: 2, row: 1 },
         mobile: { col: 4, row: 1 },
@@ -21,8 +20,7 @@
         <h1 :class="$style['title-card']">Lions, Tigers & Bears</h1>
       </section></BentoCard
     >
-    <BentoCard
-      :responsive-span="{
+    <BentoCard :responsive-span="{
         desktop: { col: 2, row: 4 },
         tablet: { col: 2, row: 3 },
         mobile: { col: 4, row: 3 },
@@ -40,8 +38,7 @@
         </p>
       </section>
     </BentoCard>
-    <BentoCard
-      :responsive-span="{
+    <BentoCard :responsive-span="{
         desktop: { col: 2, row: 2 },
         tablet: { col: 2, row: 2 },
         mobile: { col: 4, row: 3 },

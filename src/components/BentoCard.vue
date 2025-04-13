@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div
     :class="$style.card"
     :style="{
@@ -8,19 +8,59 @@
   >
     <slot />
   </div>
+</template> -->
+
+<template>
+  <div
+    :class="$style.card"
+    :style="{
+      gridColumn: `span ${currentSpan.col}`,
+      gridRow: `span ${currentSpan.row}`,
+    }"
+  >
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts">
-defineProps({
-  colSpan: {
-    type: Number,
-    default: 1,
-  },
-  rowSpan: {
-    type: Number,
-    default: 1,
-  },
+import { computed, ref, onMounted, onUnmounted } from "vue";
+
+const props = defineProps<{
+  responsiveSpan: {
+    desktop: { col: number; row: number };
+    tablet?: { col: number; row: number };
+    mobile?: { col: number; row: number };
+  };
+}>();
+
+const screenWidth = ref(window.innerWidth);
+
+const updateWidth = () => {
+  screenWidth.value = window.innerWidth;
+};
+
+onMounted(() => window.addEventListener("resize", updateWidth));
+onUnmounted(() => window.removeEventListener("resize", updateWidth));
+
+const currentSpan = computed(() => {
+  if (screenWidth.value <= 480 && props.responsiveSpan.mobile) {
+    return props.responsiveSpan.mobile;
+  } else if (screenWidth.value <= 768 && props.responsiveSpan.tablet) {
+    return props.responsiveSpan.tablet;
+  }
+  return props.responsiveSpan.desktop;
 });
+
+// defineProps({
+//   colSpan: {
+//     type: Number,
+//     default: 1,
+//   },
+//   rowSpan: {
+//     type: Number,
+//     default: 1,
+//   },
+// });
 </script>
 
 <style module>

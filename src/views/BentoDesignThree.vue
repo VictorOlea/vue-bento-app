@@ -1,31 +1,61 @@
 <template>
   <BentoGrid>
-    <BentoCard :col-span="3" :row-span="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 3, row: 3 },
+        tablet: { col: 2, row: 1 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Card-1</h2>
       </section></BentoCard
     >
-    <BentoCard :col-span="1" :row-span="4"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 4 },
+        tablet: { col: 2, row: 1 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Card-2</h2>
       </section></BentoCard
     >
-    <BentoCard :col-span="1" :row-span="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 3 },
+        tablet: { col: 4, row: 1 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Card-3</h2>
       </section></BentoCard
     >
-    <BentoCard :col-span="1" :row-span="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 3 },
+        tablet: { col: 4, row: 1 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Card-4</h2>
       </section></BentoCard
     >
-    <BentoCard :col-span="1" :row-span="3"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 3 },
+        tablet: { col: 2, row: 2 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Card-5</h2>
       </section></BentoCard
     >
-    <BentoCard :col-span="1" :row-span="2"
+    <BentoCard
+      :responsive-span="{
+        desktop: { col: 1, row: 2 },
+        tablet: { col: 2, row: 2 },
+        mobile: { col: 4, row: 1 },
+      }"
       ><section :class="sectionStyle['section-card']">
         <h2 :class="sectionStyle['section-title']">Card-6</h2>
       </section></BentoCard
