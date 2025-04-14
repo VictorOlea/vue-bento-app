@@ -8,7 +8,7 @@
       }"
     >
       <div :class="imageStyle['img-wrapper']">
-        <img :class="imageStyle['img-card']" src="../assets/rockBand.jpg" />
+        <img :class="imageStyle['img-card']" src="../assets/rockBand.webp" />
       </div>
     </BentoCard>
     <BentoCard
@@ -61,7 +61,7 @@
       ><div :class="imageStyle['img-wrapper']">
         <img
           :class="imageStyle['img-card']"
-          src="../assets/rockBanner.jpg"
+          src="../assets/rockBanner.webp"
           alt=""
         /></div
     ></BentoCard>

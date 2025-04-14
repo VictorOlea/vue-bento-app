@@ -30,7 +30,7 @@
       ><div :class="imageStyle['img-wrapper']">
         <img
           :class="imageStyle['img-card']"
-          src="../assets/japanCityMountain.jpg"
+          src="../assets/japanCityMountain.webp"
           alt="Vista de la montaña en la ciudad de Japón"
         /></div
     ></BentoCard>
@@ -55,7 +55,7 @@
       }"
       ><div :class="imageStyle['img-wrapper']">
         <img
-          src="../assets/japanCityNight.jpg"
+          src="../assets/japanCityNight.webp"
           alt="Vista de la ciudad de Japón"
           :class="imageStyle['img-card']"
         /></div
@@ -69,7 +69,7 @@
       ><div :class="imageStyle['img-wrapper']">
         <img
           :class="imageStyle['img-card']"
-          src="../assets/japanCity.jpg"
+          src="../assets/japanCity.webp"
           alt="Noche en la ciudad de Japón"
         /></div
     ></BentoCard>
