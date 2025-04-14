@@ -6,36 +6,30 @@
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  padding: 16px;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #ffffff;
+  overflow: hidden;
+  /text-overflow: ellipsis;
 }
 
 .section-title {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 600;
   margin-bottom: 0;
   color: #333;
-}
-
-.section-content {
-  font-size: 1rem;
-  padding: 10px;
-  color: #555;
-  line-height: 1.5;
   text-align: center;
 }
 
-@media (max-width: 768px) {
-  .section-card {
-    padding: 12px;
-  }
+.section-content {
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  padding: 10px;
+  color: #555;
+  line-height: 1.4;
+  text-align: center;
+  overflow-y: auto;
 
-  .section-title {
-    font-size: 1rem;
-  }
-
-  .section-content {
-    font-size: 0.9rem;
-  }
+  list-style-type: disc;
+  list-style-position: inside;
 }

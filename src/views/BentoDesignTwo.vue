@@ -2,7 +2,7 @@
   <BentoGrid :class="$style['bento-grid']">
     <BentoCard
       :responsive-span="{
-        desktop: { col: 1, row: 1 },
+        desktop: { col: 2, row: 1 },
         tablet: { col: 2, row: 1 },
         mobile: { col: 4, row: 1 },
       }"
@@ -13,7 +13,7 @@
     </BentoCard>
     <BentoCard
       :responsive-span="{
-        desktop: { col: 2, row: 1 },
+        desktop: { col: 1, row: 1 },
         tablet: { col: 2, row: 1 },
         mobile: { col: 4, row: 1 },
       }"
@@ -101,8 +101,13 @@ import sectionStyle from "../styles/section.module.css";
 
 <style module>
 .title-card {
-  font-size: 1.8em;
-  height: 100%;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
   width: 100%;
+  height: 100%;
+  text-align: center;
+  align-self: center;
+  padding: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 </style>

@@ -4,10 +4,19 @@ This document tracks meaningful commits for internal reference, performance hist
 
 ---
 
-## fix(types): add shim for CSS Modules and ensure TS config includes it
+## style(css): fix bullet point visibility in section-content list
+
+Adjusted list styling in section-content to ensure bullet points remain visible.
+Set list-style-position to inside and verified alignment within padded container.
+
+---
+
+## fix(types): add shim for CSS Modules and ensure TS config includes it and remove bentoTestDesign component"
 
 Adds type declaration for \*.module.css files to fix import errors in strict TS mode.
 Also ensures the src/types directory is included in tsconfig.app.json.
+
+- Remove bentoTestDesign component
 
 ---
 
