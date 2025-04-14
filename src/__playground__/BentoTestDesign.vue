@@ -38,7 +38,6 @@
 <script setup lang="ts">
 import BentoGrid from "../components/BentoGrid.vue";
 import BentoCard from "../components/BentoCard.vue";
-import sectionStyle from "../styles/section.module.css";
 </script>
 
 <style module></style>

@@ -4,6 +4,12 @@ This document tracks meaningful commits for internal reference, performance hist
 
 ---
 
+## chore(test): comment unused sectionStyle in BentoTestDesign to fix build error
+
+Keeps the BentoTestDesign.vue component for reference purposes, but comments out the unused sectionStyle variable to prevent TypeScript build failure on Netlify.
+
+---
+
 ## docs: add internal commit log for tracking project changes
 
 Creates a new documentation file under the `docs/` directory to keep a historical record of significant commits.
