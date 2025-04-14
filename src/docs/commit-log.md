@@ -4,6 +4,13 @@ This document tracks meaningful commits for internal reference, performance hist
 
 ---
 
+## fix(types): add shim for CSS Modules and ensure TS config includes it
+
+Adds type declaration for \*.module.css files to fix import errors in strict TS mode.
+Also ensures the src/types directory is included in tsconfig.app.json.
+
+---
+
 ## chore(test): comment unused sectionStyle in BentoTestDesign to fix build error
 
 Keeps the BentoTestDesign.vue component for reference purposes, but comments out the unused sectionStyle variable to prevent TypeScript build failure on Netlify.

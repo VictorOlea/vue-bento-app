@@ -11,5 +11,10 @@
     "noUncheckedSideEffectImports": true
   },
   "exclude": ["src/__playground__"],
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/types"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "src/types/**/*.d.ts"
+  ]
 }
