@@ -4,6 +4,13 @@ This document tracks meaningful commits for internal reference, performance hist
 
 ---
 
+## feat(app): update project description and add favicon
+
+- Updated the project description in `App.vue` to better reflect the app's purpose.
+- Added a favicon to `index.html` for improved branding and browser tab visibility.
+
+---
+
 ## style(css): fix bullet point visibility in section-content list
 
 Adjusted list styling in section-content to ensure bullet points remain visible.

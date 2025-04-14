@@ -10,7 +10,7 @@ import Footer from "./components/PageFooter.vue";
 
 <template>
   <DarkModeToggle />
-  <Header title="Bento Vue App" subtitle="A simple app with Vue 3" />
+  <Header title="Bento Vue App" subtitle="A Simple App With Vue 3" />
   <SectionTitle title="Bento Example-1" />
   <bento-design-one />
   <br />
